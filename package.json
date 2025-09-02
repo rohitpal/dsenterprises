@@ -1,0 +1,7 @@
+{
+  "homepage": "https://rohitpal.github.io/ds-enterprise",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
