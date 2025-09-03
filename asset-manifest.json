@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ds-enterprise/static/css/main.7ed04479.css",
+    "main.js": "/ds-enterprise/static/js/main.689868fa.js",
+    "index.html": "/ds-enterprise/index.html",
+    "main.7ed04479.css.map": "/ds-enterprise/static/css/main.7ed04479.css.map",
+    "main.689868fa.js.map": "/ds-enterprise/static/js/main.689868fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ed04479.css",
+    "static/js/main.689868fa.js"
+  ]
+}
