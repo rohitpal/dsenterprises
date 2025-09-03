@@ -1,43 +1,25 @@
-import { Link } from "react-router-dom";
-
 export default function Home() {
   return (
-    <div className="bg-gray-50">
-      {/* Hero */}
+    <div>
       <section className="bg-brand-dark text-white py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4">
-          Welcome to D S Enterprise
-        </h1>
-        <p className="text-lg mb-6">
-          Precision. Innovation. Global Reach.
+        <h1 className="text-4xl md:text-5xl font-bold">Welcome to DS Enterprises</h1>
+        <p className="mt-4 max-w-2xl mx-auto">
+          Delivering engineering excellence, sourcing solutions, and quality assurance worldwide.
         </p>
-        <Link
-          to="/products"
-          className="bg-brand-accent text-black px-6 py-3 rounded-lg font-semibold"
-        >
-          Explore Our Products
-        </Link>
       </section>
 
-      {/* Highlights */}
-      <section className="max-w-7xl mx-auto px-4 py-16 grid gap-8 md:grid-cols-3">
-        <div className="p-6 bg-white rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">Trusted Partner</h3>
-          <p className="text-gray-700">
-            Serving clients globally with consistent quality and reliability.
-          </p>
+      <section className="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h3 className="text-xl font-semibold">Products</h3>
+          <p className="text-gray-600 mt-2">High-quality industrial products with precision engineering.</p>
         </div>
-        <div className="p-6 bg-white rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">Engineering Expertise</h3>
-          <p className="text-gray-700">
-            Backed by years of technical knowledge and domain experience.
-          </p>
+        <div>
+          <h3 className="text-xl font-semibold">Services</h3>
+          <p className="text-gray-600 mt-2">Reliable sourcing, quality inspection, and logistics support.</p>
         </div>
-        <div className="p-6 bg-white rounded-2xl shadow">
-          <h3 className="text-xl font-semibold mb-2">Global Sourcing</h3>
-          <p className="text-gray-700">
-            Optimized supply chains across multiple continents.
-          </p>
+        <div>
+          <h3 className="text-xl font-semibold">Industries</h3>
+          <p className="text-gray-600 mt-2">Serving automotive, manufacturing, energy, and more.</p>
         </div>
       </section>
     </div>

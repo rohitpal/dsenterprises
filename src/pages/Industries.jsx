@@ -1,22 +1,28 @@
-const industries = [
-  { sector: "Automotive", desc: "Supplying critical parts for vehicles worldwide." },
-  { sector: "Aerospace", desc: "Precision engineering for aviation and defense." },
-  { sector: "Industrial Machinery", desc: "Custom solutions for equipment manufacturers." },
-  { sector: "Consumer Products", desc: "Reliable sourcing for everyday goods." },
-];
-
 export default function Industries() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-brand-dark mb-8">Industries We Serve</h2>
-      <div className="grid gap-8 md:grid-cols-2">
-        {industries.map((i) => (
-          <div key={i.sector} className="p-6 bg-white rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-2">{i.sector}</h3>
-            <p className="text-gray-700">{i.desc}</p>
+    <div>
+      <section className="bg-brand-dark text-white py-16 text-center">
+        <h1 className="text-4xl font-bold">Industries We Serve</h1>
+        <p className="mt-4 max-w-2xl mx-auto">Partnering with diverse industries worldwide.</p>
+      </section>
+
+      <section className="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-8">
+        {[
+          "Automotive & Transportation",
+          "Industrial Machinery",
+          "Energy & Power",
+          "Construction & Infrastructure",
+          "Aerospace",
+          "Consumer Products",
+        ].map((industry) => (
+          <div key={industry} className="p-6 border rounded-lg shadow hover:shadow-lg transition">
+            <h3 className="text-xl font-semibold">{industry}</h3>
+            <p className="mt-2 text-gray-600">
+              Placeholder description for {industry}. Replace with case studies or client examples.
+            </p>
           </div>
         ))}
-      </div>
+      </section>
     </div>
   );
 }

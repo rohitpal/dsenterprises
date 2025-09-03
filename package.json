@@ -1,7 +1,37 @@
 {
-  "homepage": "https://rohitpal.github.io/ds-enterprise",
+  "name": "dsenterprises",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://rohitpal.github.io/dsenterprises",
+  "dependencies": {
+    "lucide-react": "^0.542.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1"
+  },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

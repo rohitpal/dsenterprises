@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom brand colors */
+:root {
+  --brand-dark: #0a192f;   /* Deep navy */
+  --brand-accent: #facc15; /* Yellow */
+}
+
+.bg-brand-dark {
+  background-color: var(--brand-dark);
+}
+
+.text-brand-accent {
+  color: var(--brand-accent);
+}
+
+.bg-brand-accent {
+  background-color: var(--brand-accent);
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-slideDown {
+  animation: slideDown 0.2s ease-out;
+}
