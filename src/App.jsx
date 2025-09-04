@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 
 import Home from "./pages/Home";
@@ -33,7 +33,11 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Redirect / → /dsenterprises */}
+          <Route path="/" element={<Navigate to="/dsenterprises" replace />} />
+          {/* Home page at /dsenterprises */}
+          <Route path="/dsenterprises" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/kitchen-utensils" element={<KitchenUtensils />} />

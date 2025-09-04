@@ -27,3 +27,7 @@
 .animate-slideDown {
   animation: slideDown 0.2s ease-out;
 }
+/* 
+.logo {
+  @apply text-4xl font-bold text-brand-accent;
+} */

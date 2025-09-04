@@ -54,7 +54,7 @@ export default function Navbar() {
     <nav className="bg-blue-900 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold">D S</Link>
+        <Link to="/" className="text-2xl font-bold">DS Enterprises</Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 relative">
@@ -67,7 +67,7 @@ export default function Navbar() {
             onMouseEnter={() => setOpenDropdown(true)}
             onMouseLeave={() => setOpenDropdown(false)}
           >
-            <button className="hover:text-yellow-400">Products ▾</button>
+            <Link to="/products"  className="hover:text-yellow-400">Products ▾</Link>
             {openDropdown && (
               <div className="absolute top-full right-0 w-[700px] bg-white text-black shadow-lg rounded-lg p-6 grid grid-cols-2 gap-6 z-50 animate-slideDown">
                 {categories.map((cat) => (
